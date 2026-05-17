@@ -1,7 +1,16 @@
 # 🔐 IA na Governança de Dados: Classificação Automatizada e Mitigação de Riscos em Ambientes Financeiros
 
-> **Artigo Científico** — Centro Universitário Senac, Campus Santo Amaro · São Paulo, 2026  
-> Demonstração interativa disponível em: **[matheusavolio.github.io/Demo_LEGAL_BERT_V2](https://matheusavolio.github.io/Demo_LEGAL_BERT_V2)**
+> **Artigo Científico** — Centro Universitário Senac, Campus Santo Amaro · São Paulo, 2026
+
+---
+
+## 🔗 Links Rápidos
+
+| | Link |
+|---|---|
+| 🌐 **Página do Projeto** | [matheusavolio.github.io/artigo_cientifico_PI5](https://matheusavolio.github.io/artigo_cientifico_PI5/) |
+| 📄 **Artigo Científico (PDF)** | [artigo_classificacao_automatica_de_dados.pdf](./artigo_classificacao_automatica_de_dados.pdf) |
+| 🖼️ **Banner da Apresentação (PDF)** | [banner_artigo.pdf](./banner_artigo.pdf) |
 
 ---
 
@@ -29,7 +38,7 @@ O artigo propõe um **modelo conceitual TO-BE** de classificação automatizada 
 ### Os 4 Níveis de Classificação (ISO/IEC 27001 A.5.12)
 
 | Nível | Definição | Ação DLP | Base Legal |
-|-------|-----------|----------|-----------|
+|-------|-----------|----------|------------|
 | 🟢 **Público** | Sem restrição de acesso | Monitoramento passivo | LGPD art. 7º |
 | 🔵 **Privado** | Uso interno apenas | Alerta ao usuário | LGPD art. 46 |
 | 🟡 **Confidencial** | Dano à organização se exposto | Bloqueio + Log | LGPD art. 46 + 48 |
@@ -51,7 +60,7 @@ O artigo avaliou cinco arquiteturas de PLN aplicadas a documentos regulatórios 
 
 > Fonte: Adaptado de Battu (2025) — *International Journal of Science and Research Archive*, v. 15, n. 3.
 
-Pilotos em instituições financeiras dos EUA, UE e Índia mostraram **redução de ~40% na carga de trabalho manual de compliance** com a adoção desses modelos.
+Pilotos em instituições financeiras dos EUA, UE e Índia demonstraram **redução de ~40% na carga de trabalho manual de compliance** com a adoção desses modelos.
 
 ---
 
@@ -61,7 +70,7 @@ O processo manual atual (AS-IS) apresenta três fragilidades estruturais:
 
 - **Ausência de critério padronizado** de classificação entre colaboradores
 - **Dependência de julgamento individual** para identificar a sensibilidade do dado
-- **Sem trilha de auditoria sistemática**, dificultando demonstrar conformidade com o art. 46 da LGPD
+- **Sem trilha de auditoria sistemática**, dificultando a demonstração de conformidade com o art. 46 da LGPD
 
 O modelo TO-BE proposto endereça todas essas fragilidades ao automatizar a classificação, padronizar os rótulos e gerar registros auditáveis contínuos.
 
@@ -77,6 +86,17 @@ Pesquisa **exploratória com abordagem qualitativa**, desenvolvida em 6 etapas:
 4. Análise documental da LGPD e ISO/IEC 27001:2022
 5. Triangulação das fontes
 6. Estruturação do modelo conceitual TO-BE
+
+---
+
+## 📁 Arquivos do Repositório
+
+| Arquivo | Descrição |
+|---------|-----------|
+| [`index.html`](./index.html) | Demonstração interativa do modelo Legal-BERT+NER (GitHub Pages) |
+| [`artigo_classificacao_automatica_de_dados.pdf`](./artigo_classificacao_automatica_de_dados.pdf) | Artigo científico completo em PDF |
+| [`banner_artigo.pdf`](./banner_artigo.pdf) | Banner utilizado na apresentação do projeto |
+| [`README.md`](./README.md) | Documentação do repositório |
 
 ---
 
