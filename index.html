@@ -464,6 +464,50 @@ footer strong { color: var(--text); }
     </p>
   </header>
 
+  <!-- DEMO -->
+  <div class="sl">Classificação em tempo real — experimente</div>
+  <div class="dgrid">
+
+    <div class="panel">
+      <div class="ptitle">💬 Exemplos do contexto financeiro</div>
+      <div class="samps">
+        <button class="sbtn" onclick="pick(this,0)">
+          <span class="stag" style="color:var(--green);border-color:var(--green);background:rgba(52,211,153,.1)">PÚBLICO</span>
+          Relatório anual 2024 — disponível no site institucional para todos os stakeholders.
+        </button>
+        <button class="sbtn" onclick="pick(this,1)">
+          <span class="stag" style="color:var(--accent);border-color:var(--accent);background:rgba(56,189,248,.1)">PRIVADO</span>
+          Circular interna nº 042/2025 — abertura de conta PJ. Uso restrito às equipes de backoffice.
+        </button>
+        <button class="sbtn" onclick="pick(this,2)">
+          <span class="stag" style="color:var(--yellow);border-color:var(--yellow);background:rgba(251,191,36,.1)">CONFID.</span>
+          Contrato nº 2025-1183 com XYZ Ltda, valor R$ 2.400.000,00, cláusula de exclusividade e sigilo.
+        </button>
+        <button class="sbtn" onclick="pick(this,3)">
+          <span class="stag" style="color:var(--red);border-color:var(--red);background:rgba(248,113,113,.1)">SENSÍVEL</span>
+          Cliente Maria da Silva, CPF 123.456.789-00, diabetes tipo 2, score de crédito 420. Biometria cadastrada.
+        </button>
+        <button class="sbtn" onclick="pick(this,4)">
+          <span class="stag" style="color:var(--red);border-color:var(--red);background:rgba(248,113,113,.1)">SENSÍVEL</span>
+          João com crachá 31110 foi diagnosticado com cancer e está em tratamento quimioterápico.
+        </button>
+      </div>
+      <div style="font-size:11px;color:var(--sub);margin-bottom:7px">✏️ Ou escreva seu próprio texto:</div>
+      <textarea id="txt" placeholder="Ex: Colaborador Pedro Lima, crachá 4872, diagnosticado com hipertensão e CPF 321.654.987-11…"></textarea>
+      <button class="rbtn" onclick="classify()">⚡ Classificar com Legal-BERT+NER</button>
+    </div>
+
+    <div class="panel">
+      <div class="ptitle">📊 Resultado da análise</div>
+      <div id="res">
+        <div class="rph">
+          <div class="phi">🔬</div>
+          <span>Selecione um exemplo ou escreva<br>um texto e clique em <strong style="color:var(--accent)">Classificar</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- O QUE É -->
   <div class="sl">O que é esse modelo?</div>
   <div class="egrid">
@@ -566,50 +610,6 @@ footer strong { color: var(--text); }
       <div class="le">Biometria, saúde, crédito — exposição causa dano direto ao titular</div>
       <div class="ld" style="color:var(--red)">→ Bloqueio + Notifica DPO</div>
       <div class="la">LGPD art. 5º,II · art. 11 · art. 52</div>
-    </div>
-  </div>
-
-  <!-- DEMO -->
-  <div class="sl">Classificação em tempo real — experimente</div>
-  <div class="dgrid">
-
-    <div class="panel">
-      <div class="ptitle">💬 Exemplos do contexto financeiro</div>
-      <div class="samps">
-        <button class="sbtn" onclick="pick(this,0)">
-          <span class="stag" style="color:var(--green);border-color:var(--green);background:rgba(52,211,153,.1)">PÚBLICO</span>
-          Relatório anual 2024 — disponível no site institucional para todos os stakeholders.
-        </button>
-        <button class="sbtn" onclick="pick(this,1)">
-          <span class="stag" style="color:var(--accent);border-color:var(--accent);background:rgba(56,189,248,.1)">PRIVADO</span>
-          Circular interna nº 042/2025 — abertura de conta PJ. Uso restrito às equipes de backoffice.
-        </button>
-        <button class="sbtn" onclick="pick(this,2)">
-          <span class="stag" style="color:var(--yellow);border-color:var(--yellow);background:rgba(251,191,36,.1)">CONFID.</span>
-          Contrato nº 2025-1183 com XYZ Ltda, valor R$ 2.400.000,00, cláusula de exclusividade e sigilo.
-        </button>
-        <button class="sbtn" onclick="pick(this,3)">
-          <span class="stag" style="color:var(--red);border-color:var(--red);background:rgba(248,113,113,.1)">SENSÍVEL</span>
-          Cliente Maria da Silva, CPF 123.456.789-00, diabetes tipo 2, score de crédito 420. Biometria cadastrada.
-        </button>
-        <button class="sbtn" onclick="pick(this,4)">
-          <span class="stag" style="color:var(--red);border-color:var(--red);background:rgba(248,113,113,.1)">SENSÍVEL</span>
-          João com crachá 31110 foi diagnosticado com cancer e está em tratamento quimioterápico.
-        </button>
-      </div>
-      <div style="font-size:11px;color:var(--sub);margin-bottom:7px">✏️ Ou escreva seu próprio texto:</div>
-      <textarea id="txt" placeholder="Ex: Colaborador Pedro Lima, crachá 4872, diagnosticado com hipertensão e CPF 321.654.987-11…"></textarea>
-      <button class="rbtn" onclick="classify()">⚡ Classificar com Legal-BERT+NER</button>
-    </div>
-
-    <div class="panel">
-      <div class="ptitle">📊 Resultado da análise</div>
-      <div id="res">
-        <div class="rph">
-          <div class="phi">🔬</div>
-          <span>Selecione um exemplo ou escreva<br>um texto e clique em <strong style="color:var(--accent)">Classificar</strong></span>
-        </div>
-      </div>
     </div>
   </div>
 
